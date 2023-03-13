@@ -196,8 +196,9 @@ h5 {
 }
 
 /* Javascript Section (Open Menu)*/
-body.scroll-disable {
-  overflow: hidden;
+nav.position-sticky {
+  position: sticky;
+  top: -120px;
 }
 
 .menu-sign-close .menu-open-img {
@@ -215,10 +216,10 @@ body.scroll-disable {
 .menu-open {
   background-color: var(--clr-body);
   display: block;
-  height: 100%;
+  height: max(125vh, 600px);
   position: absolute;
   right: 0;
-  top: 0;
+  top: -35px;
   width: 70vw;
   z-index: 10;
 }
